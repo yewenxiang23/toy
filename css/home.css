@@ -1,0 +1,215 @@
+#logo-container {}
+
+.content {
+    background-color: transparent;
+    max-width: 940px;
+}
+
+.content-ringt {
+    min-width: 540px;
+    height: calc(100vh - 60px);
+    background-color: transparent;
+}
+
+.content-title {
+    margin: 0;
+    margin-top: 114px;
+    font-size: 46px;
+    font-weight: 320;
+    text-align: center;
+}
+
+.content-title span {
+    font-size: 24px;
+    margin-left: 10px;
+    font-weight: 200;
+}
+
+.discrible {
+    text-align: center;
+    margin-top: 10px;
+    vertical-align: bottom;
+}
+
+.discrible p {
+    font-size: 30px;
+    letter-spacing: 16px;
+    display: inline;
+    vertical-align: bottom;
+    line-height: 1;
+}
+
+.discrible span {
+    font-size: 16px;
+    color: #646464;
+    margin-left: 10px;
+}
+
+.download {
+    width: 380px;
+    margin: 0 auto;
+    margin-top: 78px;
+}
+
+.download-btn {
+    display: block;
+    border: 2px solid #ababab;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333333;
+    line-height: 45px;
+    border-radius: 5px;
+}
+
+.download-btn i {
+    font-size: 26px;
+    margin-right: 6px;
+}
+
+.download a {
+    width: 176px;
+    float: left;
+}
+
+.download a:last-of-type {
+    margin-left: 26px;
+}
+
+.code-download {
+    width: 380px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.code-download:hover+.qrcode {
+    height: 238px;
+    opacity: 1;
+    transition: all .2s;
+}
+
+.download a:hover, .code-download:hover {
+    background-color: #fc0056;
+    border: 2px solid #fb0036;
+    color: #fff;
+}
+
+.qrcode {
+    width: 380px;
+    margin: 0 auto;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .12), 0 1px 4px rgba(0, 0, 0, .24);
+    border-radius: 5px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.qrcode img {
+    display: block;
+    width: 238px;
+    margin: 0 auto;
+}
+
+.bg-layer {
+    background-color: #f4d020;
+    width: calc((100vw - 940px)/2 + 400px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bg-layer img {
+    display: block;
+    float: right;
+    margin-top: 100px;
+    margin-right: 88px;
+}
+
+.at-once-download {
+    width: 80%;
+    float: none;
+    margin: 0 auto;
+    background-color: #f4d020;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+
+/* 小于940px */
+
+@media screen and (max-width: 940px) {
+    .download-btn {
+        border: 2px solid #323330;
+        color: #323330;
+    }
+    .download a:hover, .code-download:hover {
+        background-color: #323330;
+        border: 2px solid #323330;
+        color: #f4d020;
+    }
+    .bg-layer {
+        width: 100%;
+        right: 0;
+    }
+    .bg-layer img {
+        display: block;
+        float: left;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+}
+
+
+/* 740px-940px */
+
+@media screen and (max-width: 940px) and (min-width:740px) {
+    .bg-layer img {
+        float: left;
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+}
+
+
+/* 小于740px */
+
+@media screen and (max-width:740px) {
+    #nav {
+        display: none;
+    }
+    .bg-layer img {
+        float: none;
+        margin: 0 auto;
+        margin-top: 60px;
+        width: 50%;
+    }
+    #logo-container {
+        width: 100%;
+        text-align: center;
+    }
+    .logo {
+        height: 60px;
+        line-height: 60px;
+    }
+    .content-title, .discrible {
+        display: none;
+    }
+    .download-btn-group {
+        display: none;
+    }
+    .content-ringt {
+        width: 100%;
+        min-width: auto;
+        float: none;
+    }
+    .at-once-download {
+        display: block;
+    }
+}
