@@ -9,6 +9,7 @@
     min-width: 540px;
     height: calc(100vh - 60px);
     background-color: transparent;
+    padding-left: 150px;
 }
 
 .content-title {
@@ -124,8 +125,8 @@
 .bg-layer img {
     display: block;
     float: right;
-    margin-top: 100px;
-    margin-right: 88px;
+    margin-top: 150px;
+    margin-right: 150px;
 }
 
 .at-once-download {
